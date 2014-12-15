@@ -102,7 +102,7 @@ class Window(Frame):
                 frame = Frame(self.canvas, width=width)
                 center=width/2
                 frame.place(x=x0+center-(20), y=550-height+5)
-                label = Label(frame, text="Total", fg='white', bg='blue')
+                label = Label(frame, text=last, fg='white', bg='blue')
                 label.pack(fill=BOTH, expand=1)
             else:
                 height =  (last-each)/self.eachPixVal
