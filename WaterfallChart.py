@@ -1,14 +1,3 @@
-"""
-
-name = WaterFall Chart Module
-version = 1.0
-programmer = Ridhwanul Haque
-programmer_email = rhemon19@gmail.com
-programmer_url = rhemon.com
-date = 14-12-2014
-
-"""
-
 from Tkinter import *
 
 # TODO Responsive Design for Negative Value
@@ -224,10 +213,3 @@ class WaterfallA(Waterfall):
                 if self.y[-1] != 0:
                     raise WaterfallDataError("Last Value for your amount should be 0, as it will be the total for that case")
                 self.y = form_yPlots(self.y)
-
-if __name__ == '__main__':
-    data = {'x': ['After Revenue', 'After Income', 'After Spent', 'After Loss', 'After Loss','Altogether Left'], 'y':[300, 400, -250, -100, -250],
-            'xLabel': 'Activity', 'yLabel': 'Money($)'}
-    chart = WaterfallA(data, title="Waterfall Data Visualization")
-    chart.display()
-
